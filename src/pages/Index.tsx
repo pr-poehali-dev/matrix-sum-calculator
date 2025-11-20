@@ -4,30 +4,47 @@ import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 import Task1 from '@/components/tasks/Task1';
 import Task2 from '@/components/tasks/Task2';
+import Task3 from '@/components/tasks/Task3';
+import Task4 from '@/components/tasks/Task4';
 import Task5 from '@/components/tasks/Task5';
+import Task6 from '@/components/tasks/Task6';
+import Task7 from '@/components/tasks/Task7';
+import Task8 from '@/components/tasks/Task8';
+import Task9 from '@/components/tasks/Task9';
+import Task10 from '@/components/tasks/Task10';
+import Task11 from '@/components/tasks/Task11';
+import Task12 from '@/components/tasks/Task12';
+import Task13 from '@/components/tasks/Task13';
+import Task14 from '@/components/tasks/Task14';
+import Task15 from '@/components/tasks/Task15';
+import Task16 from '@/components/tasks/Task16';
+import Task17 from '@/components/tasks/Task17';
+import Task18 from '@/components/tasks/Task18';
+import Task19 from '@/components/tasks/Task19';
+import Task20 from '@/components/tasks/Task20';
 import DelphiInstructions from '@/components/DelphiInstructions';
 
 const tasks = [
   { id: 1, title: 'Задача 1', description: 'Матрица MxN и максимум', implemented: true },
   { id: 2, title: 'Задача 2', description: 'Анализ массива A(12)', implemented: true },
-  { id: 3, title: 'Задача 3', description: 'Сумма кратных К', implemented: false },
-  { id: 4, title: 'Задача 4', description: 'Возведение в степень', implemented: false },
+  { id: 3, title: 'Задача 3', description: 'Сумма кратных К', implemented: true },
+  { id: 4, title: 'Задача 4', description: 'Возведение в степень', implemented: true },
   { id: 5, title: 'Задача 5', description: 'Стоимость конфет', implemented: true },
-  { id: 6, title: 'Задача 6', description: 'Сумма массива Mas(2,4)', implemented: false },
-  { id: 7, title: 'Задача 7', description: 'Минимум матрицы', implemented: false },
-  { id: 8, title: 'Задача 8', description: 'Сумма ряда', implemented: false },
-  { id: 9, title: 'Задача 9', description: 'Четные элементы', implemented: false },
-  { id: 10, title: 'Задача 10', description: 'Удвоенная матрица', implemented: false },
-  { id: 11, title: 'Задача 11', description: 'Члены ряда', implemented: false },
-  { id: 12, title: 'Задача 12', description: 'Добавление восклицаний', implemented: false },
-  { id: 13, title: 'Задача 13', description: 'Анализ возраста', implemented: false },
-  { id: 14, title: 'Задача 14', description: 'Таблица Sin/Cos', implemented: false },
-  { id: 15, title: 'Задача 15', description: 'Вычисление 25 значений', implemented: false },
-  { id: 16, title: 'Задача 16', description: 'Решение уравнения', implemented: false },
-  { id: 17, title: 'Задача 17', description: 'Четные числа последовательности', implemented: false },
-  { id: 18, title: 'Задача 18', description: 'Номера нулевых элементов', implemented: false },
-  { id: 19, title: 'Задача 19', description: 'Слова на букву B', implemented: false },
-  { id: 20, title: 'Задача 20', description: 'Сумма большего и меньшего', implemented: false },
+  { id: 6, title: 'Задача 6', description: 'Сумма массива Mas(2,4)', implemented: true },
+  { id: 7, title: 'Задача 7', description: 'Минимум матрицы', implemented: true },
+  { id: 8, title: 'Задача 8', description: 'Сумма ряда', implemented: true },
+  { id: 9, title: 'Задача 9', description: 'Четные элементы', implemented: true },
+  { id: 10, title: 'Задача 10', description: 'Удвоенная матрица', implemented: true },
+  { id: 11, title: 'Задача 11', description: 'Члены ряда', implemented: true },
+  { id: 12, title: 'Задача 12', description: 'Добавление восклицаний', implemented: true },
+  { id: 13, title: 'Задача 13', description: 'Анализ возраста', implemented: true },
+  { id: 14, title: 'Задача 14', description: 'Таблица Sin/Cos', implemented: true },
+  { id: 15, title: 'Задача 15', description: 'Вычисление 25 значений', implemented: true },
+  { id: 16, title: 'Задача 16', description: 'Решение уравнения', implemented: true },
+  { id: 17, title: 'Задача 17', description: 'Четные числа последовательности', implemented: true },
+  { id: 18, title: 'Задача 18', description: 'Номера нулевых элементов', implemented: true },
+  { id: 19, title: 'Задача 19', description: 'Слова на букву B', implemented: true },
+  { id: 20, title: 'Задача 20', description: 'Сумма большего и меньшего', implemented: true },
 ];
 
 export default function Index() {
@@ -112,7 +129,24 @@ export default function Index() {
 
             {selectedTask === 1 && <Task1 />}
             {selectedTask === 2 && <Task2 />}
+            {selectedTask === 3 && <Task3 />}
+            {selectedTask === 4 && <Task4 />}
             {selectedTask === 5 && <Task5 />}
+            {selectedTask === 6 && <Task6 />}
+            {selectedTask === 7 && <Task7 />}
+            {selectedTask === 8 && <Task8 />}
+            {selectedTask === 9 && <Task9 />}
+            {selectedTask === 10 && <Task10 />}
+            {selectedTask === 11 && <Task11 />}
+            {selectedTask === 12 && <Task12 />}
+            {selectedTask === 13 && <Task13 />}
+            {selectedTask === 14 && <Task14 />}
+            {selectedTask === 15 && <Task15 />}
+            {selectedTask === 16 && <Task16 />}
+            {selectedTask === 17 && <Task17 />}
+            {selectedTask === 18 && <Task18 />}
+            {selectedTask === 19 && <Task19 />}
+            {selectedTask === 20 && <Task20 />}
           </div>
         )}
       </main>
