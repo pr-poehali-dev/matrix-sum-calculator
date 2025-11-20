@@ -5,6 +5,7 @@ import Icon from '@/components/ui/icon';
 import Task1 from '@/components/tasks/Task1';
 import Task2 from '@/components/tasks/Task2';
 import Task5 from '@/components/tasks/Task5';
+import DelphiInstructions from '@/components/DelphiInstructions';
 
 const tasks = [
   { id: 1, title: 'Задача 1', description: 'Матрица MxN и максимум', implemented: true },
@@ -31,6 +32,7 @@ const tasks = [
 
 export default function Index() {
   const [selectedTask, setSelectedTask] = useState<number | null>(null);
+  const [showInstructions, setShowInstructions] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
@@ -40,16 +42,31 @@ export default function Index() {
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
               <Icon name="Calculator" className="text-primary-foreground" size={24} />
             </div>
-            <div>
+            <div className="flex-1">
               <h1 className="text-2xl font-bold">Delphi Задачи</h1>
               <p className="text-sm text-muted-foreground">Интерактивный тренажер по программированию</p>
             </div>
+            <Button 
+              variant="outline" 
+              onClick={() => {
+                setSelectedTask(null);
+                setShowInstructions(!showInstructions);
+              }}
+              className="gap-2"
+            >
+              <Icon name="Code" size={18} />
+              {showInstructions ? 'Задачи' : 'Инструкции Delphi'}
+            </Button>
           </div>
         </div>
       </header>
 
       <main className="container mx-auto px-4 py-8">
-        {!selectedTask ? (
+        {showInstructions ? (
+          <div className="animate-fade-in">
+            <DelphiInstructions />
+          </div>
+        ) : !selectedTask ? (
           <div className="animate-fade-in">
             <div className="mb-8">
               <h2 className="text-3xl font-bold mb-2">Выберите задачу</h2>
